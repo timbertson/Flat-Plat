@@ -11,7 +11,8 @@
 
 <!-- meaningful constants -->
 
-<constant name="C_titlebar" value="#37474F"/>
+<constant name="C_titlebar" value="#ec5840"/>
+<constant name="C_titlebar_inactive" value="#37474F"/>
 <constant name="C_titlebar_alt" value="gtk:bg[NORMAL]"/>
 
 <constant name="C_highlight" value="blend/#37474F/#FFFFFF/0.2"/>
@@ -124,7 +125,7 @@
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
-  <include name="entire_background_focused"/>
+  <rectangle color="C_titlebar_inactive" x="0" y="0" width="width" height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="entire_background_alt_focused">
